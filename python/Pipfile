@@ -5,6 +5,7 @@ name = "pypi"
 
 [packages]
 boto3 = "*"
+boto3-stubs = {extras = ["codepipeline", "logs"], version = "*"}
 
 [dev-packages]
 flake8 = "*"
