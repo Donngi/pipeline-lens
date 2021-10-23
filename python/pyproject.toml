@@ -1,0 +1,10 @@
+[tool.black]
+line-length = 100
+
+# https://mypy.readthedocs.io/en/stable/config_file.html
+[tool.mypy]
+ignore_missing_imports = true
+show_column_numbers = true
+check_untyped_defs = true
+exclude = "test_*"
+pretty = true
