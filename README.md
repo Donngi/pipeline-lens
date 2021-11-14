@@ -1,13 +1,20 @@
 # Pipeline-lens
 Boost your debug process of CodePipeline.
 
+Pipeline-lens traces your latest execution of CodePipeline and show logs of each action.
+
+# Install
+```
+$ brew tap Jimon-s/pipeline-lens
+$ brew install pipeline-lens
+```
+
 # Usage
 ```
 $ pipeline-lens --name YOUR_PIPELINE_NAME_HERE
 ```
 
 # Features
-Pipeline-lens traces your latest execution of CodePipeline and show logs of each action.
 
 For example, if you have CodePipeline like
 
