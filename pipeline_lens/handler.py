@@ -128,8 +128,11 @@ def get_project_name(pipeline_info: GetPipelineOutputTypeDef, target_action: str
 def main():
     # Parse args.
     parser = argparse.ArgumentParser()
-    parser.add_argument("--name", required=True)
-    parser.add_argument("--run", action="store_true")
+    parser.add_argument(
+        "--name", required=True, help="name of the CodePipeline which you want to trace"
+    )
+    parser.add_argument("--run", action="store_true", help="run pipeline before starting to trace")
+
     pipeline_name = parser.parse_args().name
     setup_logger(level=logging.INFO)
 

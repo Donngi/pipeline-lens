@@ -1,0 +1,21 @@
+#compdef pipeline-lens
+# ----------------------------------------------------------------------------------------
+# Zsh completion file for pipeline-lens
+#
+#
+# This file was generated with help from Zargparse (https://github.com/ctil/zargparse)
+# ----------------------------------------------------------------------------------------
+
+typeset -A opt_args
+
+_pipeline-lens() {
+
+  # Global flags (i.e. ones not associated with a subcommand)
+  _arguments \
+    '(-h --help)'{-h,--help}'[show this help message and exit]' \
+    '--name=[name of the CodePipeline which you want to trace]:' \
+    '--run[run pipeline before starting to trace]' \
+    '*:: :->args'
+
+}
+_pipeline-lens
