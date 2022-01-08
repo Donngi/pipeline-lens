@@ -3,6 +3,8 @@ Boost your debug process of CodePipeline.
 
 Pipeline-lens traces your latest execution of CodePipeline and show logs of each action.
 
+![logs](./doc/capture.png)
+
 # Install
 ```
 $ brew tap Jimon-s/pipeline-lens
